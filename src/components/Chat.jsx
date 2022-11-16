@@ -11,7 +11,7 @@ const Chat = () => {
   const [userName, setUserName] = useState("");
   const [userRoom, setUserRoom] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "http://localhost:8080";
+  const ENDPOINT = "https://yr-chat-app-backend.herokuapp.com/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(window.location.search);
