@@ -11,8 +11,7 @@ const Message = ({ message, userName }) => {
     </div>
   ) : (
     <div
-      className="bg-purple-700 mt-4 text-white p-3 rounded-md ml-auto"
-      style={{ width: "50%" }}
+      className="bg-purple-700 mt-4 text-white p-3 rounded-md ml-auto message"
     >
       <p className="font-bold">{message.user}</p>
       <p className="mt-4">{ReactEmoji.emojify(message.message)}</p>
